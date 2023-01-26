@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Star Rating | Web Academy</title>
+
+	<!-- Icons (Font Awesome v5) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<section class="card card-rating">
+			<form class="card-rating-form">
+				<h1 class="card-title">How did we do?</h1>
+				<p class="card-desc">
+					Please let us know how we did with your support request. 
+					All feedback is appreciated to help us improve our offering!
+				</p>
+
+				<div class="rating-stars">
+					<span class="star active" data-num="1"><i class="fas fa-star"></i></span>
+					<span class="star" data-num="2"><i class="fas fa-star"></i></span>
+					<span class="star" data-num="3"><i class="fas fa-star"></i></span>
+					<span class="star" data-num="4"><i class="fas fa-star"></i></span>
+					<span class="star" data-num="5"><i class="fas fa-star"></i></span>
+				</div>
+
+				<input type="number" id="rating" name="rating" value="1" hidden>
+
+				<button class="card-button" type="submit">Submit</button>
+			</form>
+		</section>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
